@@ -18,7 +18,6 @@ export const sidebarSlice = createSlice({
     reducers: {
         // Use the PayloadAction type to declare the contents of `action.payload`
         setIsOpen: (state, action: PayloadAction<boolean>) => {
-            console.log(action.payload)
             state.isOpen = action.payload
         },
     },
