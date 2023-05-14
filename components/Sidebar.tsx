@@ -3,6 +3,7 @@
 import { useAppDispatch, useAppSelector } from "@/app/redux/hooks"
 import { setIsOpen } from "@/app/redux/slices/sidebarSlice"
 import { navigationAnalyticsLinks, navigationContentLinks } from "@/lib/navigationLinks"
+import { Menu } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
@@ -33,8 +34,7 @@ const Sidebar = () => {
                     <Image width={35} height={28} src="https://merakiui.com/images/logo.svg" alt="" />
                 </Link>
                 <button onClick={toggleOpen} className='md:hidden block'>
-                    {/* <Menu className='w-5 h-5 text-gray-600' /> */}
-                    Menu
+                    <Menu className='w-5 h-5 text-gray-600' />
                 </button>
             </div>
 
