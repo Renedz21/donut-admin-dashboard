@@ -1,3 +1,5 @@
+"use client"
+
 import { useAppDispatch } from '@/app/redux/hooks'
 import { setUserAndJwt } from '@/app/redux/slices/authSlice'
 import { login } from '@/utils/authOperations'

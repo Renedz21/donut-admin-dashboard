@@ -15,12 +15,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <ReduxProvider>
+    <ReduxProvider>
+      <html lang="en">
+        <body className={inter.className}>
           {children}
-        </ReduxProvider>
-      </body>
-    </html>
+        </body>
+      </html>
+    </ReduxProvider>
   )
 }

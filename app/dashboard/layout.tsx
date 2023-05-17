@@ -9,7 +9,7 @@ const DashboardLayout = ({
     return (
         <section className='w-full h-full flex'>
             <Sidebar />
-            <div className='p-4'>
+            <div className='p-4 md:p-6 flex-1'>
                 {children}
             </div>
         </section>

@@ -16,10 +16,10 @@ const TitleComponent = ({ title }: { title: string }) => {
 
     return (
         <section className='flex items-center gap-2 w-full'>
-            <button onClick={toggleOpen} className='p-1.5'>
+            <button type='button' onClick={toggleOpen} className='p-1.5 block md:hidden'>
                 <Menu className='w-5 h-5 text-gray-600' />
             </button>
-            <Title className='text-gray-800 text-xl'>{title}</Title>
+            <Title className='text-gray-800 text-xl md:text-2xl'>{title}</Title>
         </section>
     )
 }
